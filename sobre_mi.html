@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="en"> <!-- Inicio de la etiqueta HTML con especificación del idioma -->
+<head> <!-- Sección de encabezado -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos -->
+    <title>Sobre mi</title> <!-- Título de la página -->
+    <link rel="icon" href="imagenes/isotipo@2x-8.png" type="image/x-icon"> <!-- Ícono de la pestaña del navegador -->
+    <link rel="stylesheet" href="estiloSobreMi.css"> <!-- Enlace al archivo de estilos CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> <!-- Enlace a la librería animate.css para animaciones -->
+    <script src="wow.min.js"></script> <!-- Enlace al archivo de la librería wow -->
+    <script>
+        new WOW().init(); // Inicialización de la librería wow para las animaciones
+    </script>
+</head>
+<body> <!-- Cuerpo del documento HTML -->
+    <header> <!-- Encabezado de la página -->
+        <nav class="menu-container"> <!-- Contenedor del menú -->
+            <div class="menu-toggle"> <!-- Botón para activar el menú -->
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"> <!-- Capa de superposición para el menú desplegable -->
+                <nav class="overlay-menu"> <!-- Menú desplegable -->
+                    <ul>
+                        <li><a href="portafolio.html">PORTAFOLIO</a></li> <!-- Enlace al portafolio -->
+                        <li><a href="sobre_mi.html">SOBRE MI</a></li> <!-- Enlace a la página 'Sobre mí' -->
+                        <li><a href="contacto.html">CONTACTO</a></li> <!-- Enlace a la página de contacto -->
+                    </ul>
+                </nav>
+            </div>
+            <div class ="menu-logo"> <!-- Logotipo en el menú -->
+                <a href="index.html"><img src="imagenes/isotipo@2x-8.png" width="60px"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- Contenido principal -->
+        <h1 class="titulo-trabajo wow animate__animated animate__slideInLeft">SOBRE MI</h1> <!-- Título principal con animación -->
+        <article class="contenedor"> <!-- Contenedor del artículo -->
+            <div class="columna1"> <!-- Primera columna -->
+                <p> <!-- Párrafo de información personal -->
+                    Soy un ingeniero en ciencias de la computación y desarrollador web. <br>Nací en Ecuador y tengo 21 años.
+                    Mis hobbies son el básquet, la música, las salidas a la naturaleza y los videojuegos.
+                    Como desarrollador web, mi enfoque radica en la creación de experiencias digitales cautivadoras y funcionales que resuenen con los usuarios. Mi objetivo es fusionar diseño y tecnología para construir sitios web que no solo sean visualmente atractivos, sino también intuitivos y accesibles.
+                    <br>Mi enfoque como desarrollador web se centra en la excelencia técnica, la creatividad, el profesionalismo y la satisfacción del usuario, todo ello respaldado por una ética de trabajo sólida y valores.
+                </p>
+            </div>
+            <aside class="columna2"> <!-- Segunda columna -->
+                
+            </aside>
+        </article>
+
+        <div class="contenedor"> <!-- Contenedor del botón de contacto -->
+            <a href="contacto.html"> <!-- Enlace a la página de contacto -->
+                <div class="botonform2"> <!-- Botón de contacto -->
+                    CONTACTO
+                </div>
+            </a>
+        </div>
+        <div class="imagen"> <!-- Contenedor de la imagen -->
+                <img class="imagen-responsiva" src="imagenes/escuchando_msuica.png"> <!-- Imagen -->
+        </div>
+        
+    </main>
+    <footer class="pie"> <!-- Pie de página -->
+        <a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank"><p>All rights reserved  <img src="imagenes/copyright.png" height="20">  JACS 2024</p></a> <!-- Derechos de autor -->
+    </footer>
+    <script src="scriptv2.js"></script> <!-- Enlace al archivo de script JavaScript -->
+</body>
+</html>

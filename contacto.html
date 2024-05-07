@@ -1,0 +1,80 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento -->
+<html lang="en"> <!-- Inicio del documento HTML con especificación de idioma -->
+<head>
+    <meta charset="UTF-8"> <!-- Especificación de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <title>Contacto</title> <!-- Título de la página -->
+    <link rel="icon" href="imagenes/isotipo@2x-8.png" type="image/x-icon"> <!-- Icono de la pestaña del navegador -->
+    <link rel="stylesheet" href="estiloContacto.css"> <!-- Enlace a la hoja de estilos -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> <!-- Enlace a la librería de animaciones CSS -->
+    <script src="wow.min.js"></script> <!-- Enlace al archivo JavaScript de la librería Wow -->
+    <script>
+        new WOW().init(); // Inicialización de la librería Wow para animaciones
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu-container"> <!-- Contenedor del menú de navegación -->
+            <div class="menu-toggle"> <!-- Botón para activar/desactivar el menú en dispositivos móviles -->
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+            <div class ="menu-logo"> <!-- Logotipo en el menú de navegación -->
+                <a href="index.html"><img src="imagenes/isotipo@2x-8.png" width="60px"></a>
+            </div>
+            <div class="overlay" id="overlay"> <!-- Overlay para el menú desplegable en dispositivos móviles -->
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="portafolio.html">PORTAFOLIO</a></li> <!-- Enlaces del menú -->
+                        <li><a href="sobre_mi.html">SOBRE MI</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="titulo-trabajo wow animate__animated animate__slideInLeft">CONTACTO</h1> <!-- Título principal -->
+        <article class="contenedor wow animate__animated animate__backInUp"> <!-- Contenedor del contenido -->
+            <section class="imagen-iz"> <!-- Sección de imagen izquierda -->
+                <a href="http://linkedin.com" target="_blank"> <!-- Enlace a LinkedIn -->
+                    <img src="imagenes/linkedin.png" height="100"> <!-- Imagen de LinkedIn -->
+                </a>
+            </section>
+            <br>
+            <section class="imagen-de"> <!-- Sección de imagen derecha -->
+                <a href="mailto:joel.cuascota@hotmail.com"> <!-- Enlace para enviar correo electrónico -->
+                    <img src="imagenes/outlook.png" height="100"> <!-- Imagen de Outlook -->
+                </a>
+            </section>
+            <br>
+            <section class="imagen-iz"> <!-- Sección de imagen izquierda -->
+                <a href="http://facebook.com/joel.cuascota.7" target="_blank"> <!-- Enlace a Facebook -->
+                    <img src="imagenes/messenger.png" height="100"> <!-- Imagen de Messenger -->
+                </a>
+            </section>
+            <br>
+            <section class="imagen-de"> <!-- Sección de imagen derecha -->
+                <a href="http://instagram.com/joel.cuascota.7" target="_blank"> <!-- Enlace a Instagram -->
+                    <img src="imagenes/insta.png" height="100"> <!-- Imagen de Instagram -->
+                </a>
+            </section>
+        </article>
+        
+        
+    </main>
+    
+    <footer class="pie">
+        <a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank"><p>All rights reserved  <img src="imagenes/copyright.png" height="20">  JACS 2024</p></a> <!-- Texto de derechos de autor -->
+    </footer>
+    <script src="scriptv2.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>

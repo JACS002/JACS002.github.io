@@ -1,0 +1,345 @@
+/* Establecer margen y relleno en 0 para los pseudo-elementos :after y :before */
+:after,
+:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Establecer el tamaño de fuente base para el documento */
+html {
+    font-size: 100%; /* 100% = 16px = 1rem */
+}
+
+/* Definir estilos para los elementos de encabezado */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos para el título del portafolio */
+.titulo-portafolio {
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    font-size: 70px;
+    padding: 20px;
+}
+
+/* Establecer la familia de fuentes para párrafos y listas */
+p, ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; /* 1rem * 16px = 16px */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: block;
+    padding: 1.25rem; /* 1.25 * 16 = 20px */
+    border-bottom: 2px solid #b7b7b7;
+    color: #fff;
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: block;
+    padding: 1.25rem; /* 1.25 * 16 = 20px */
+    border-top: 2px solid #b7b7b7;
+    color: #fff;
+}
+
+/* Estilos para el contenido principal, secciones y laterales */
+main, section, aside {
+    display: block;
+    margin: 0;
+    color: #fff;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Consulta de medios para pantallas más anchas que 640px */
+@media screen and (min-width: 640px) {
+    .flex-container {
+        display: flex;
+    }
+}
+
+/* Estilos del contenedor de imágenes */
+.contendor-imagen {
+    width: 75vw;
+    max-width: 400px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.contendor-imagen img {
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+/* Estilos del contenedor de imágenes para ancho fijo */
+.contendor-imagen-ancho {
+    height: 65vw;
+    max-height: 400px;
+    min-height: 200px;
+    margin: auto;
+}
+
+.contendor-imagen-ancho img {
+    height: 100%;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+/* MENU */
+.menu-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu-logo img {
+    width: 60px;
+    box-shadow: none;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* PORTAFOLIO */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photo-grid-item {
+    border: 1px solid #fff;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonform2 {
+    color: #fff;
+    background: rgba(87, 58, 165, 1);
+    font-weight: bold;
+    padding: 25px;
+    text-align: center;
+    border-radius: 50px;
+    width: 180px;
+    margin: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.botonform2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie {
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+}
+
+/* Media query para pantallas más pequeñas que 768px */
+@media (max-width: 768px) {
+    .titulo-portafolio {
+        font-size: 40px;
+    }
+    .photo-grid-item {
+        padding: 10px;
+    }
+    .botonform2 {
+        width: 130px;
+        margin: 20px;
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+}
+
+
+ 
+.button_container {
+  position: absolute;
+  /* top: 5%;
+  left: 4%; */
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #000000;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #000000;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #000000;
+}
+.button_container span {
+  background: #000000;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container.noabs{
+  position: fixed;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+.overlay {
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 27px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* declaración de media query: de 768px hacia abajo */
+  .overlay nav {
+      font-size: 20px;
+  }
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #000000;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

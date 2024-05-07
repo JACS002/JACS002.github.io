@@ -1,0 +1,356 @@
+*,
+:after,
+:before {
+    margin: 0px; /* Define margen cero para todos los elementos */
+    padding: 0px; /* Define relleno cero para todos los elementos */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+html {
+    font-size: 100%; /* Establece el tamaño de fuente base en 16px */
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia de fuentes para los títulos */
+    font-weight: bold; /* Establece la negrita para los títulos */
+}
+
+.titulo-trabajo {
+    display: flex; /* Hace que el título sea un contenedor flexible */
+    color: #000000; /* Define el color del texto del título */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    font-size: 55px; /* Establece el tamaño de fuente del título */
+    padding: 10px; /* Añade relleno alrededor del título */
+}
+
+p, ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia de fuentes para párrafos y listas */
+    line-height: 2.5; /* Establece la altura de línea para párrafos y listas */
+}
+
+body {
+    margin: 0; /* Establece el margen del cuerpo en cero */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia de fuentes para el cuerpo */
+    font-size: 1rem; /* Establece el tamaño de fuente del cuerpo */
+    display: flex; /* Hace que el cuerpo sea un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de apilamiento de los elementos hijos */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo como el 100% de la altura de la ventana */
+    color: #000000; /* Define el color del texto del cuerpo */
+}
+
+header {
+    display: block; /* Hace que el encabezado sea un bloque */
+    padding: 1.25rem; /* Añade relleno alrededor del encabezado */
+    border-bottom: 2px solid #b7b7b7; /* Agrega un borde inferior al encabezado */
+    color: #000000; /* Define el color del texto del encabezado */
+}
+
+footer {
+    display: block; /* Hace que el pie de página sea un bloque */
+    padding: 1.25rem; /* Añade relleno alrededor del pie de página */
+    border-top: 2px solid #b7b7b7; /* Agrega un borde superior al pie de página */
+    color: #000000; /* Define el color del texto del pie de página */
+}
+
+section, aside {
+    display: block; /* Hace que las secciones y los apartados sean bloques */
+    margin: 0; /* Establece el margen en cero */
+    color: #000000; /* Define el color del texto de las secciones y apartados */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #000000; /* Define el color de los enlaces */
+}
+
+@media screen and (min-width: 640px) {
+    /* Estilos aplicados en pantallas de 640px o más */
+    .flex-container {
+        display: flex; /* Hace que el contenedor sea flexible */
+    }
+}
+
+/* Estilos para el menú */
+.menu-container {
+    background-color: #ffffff; /* Define el color de fondo del menú */
+    display: flex; /* Hace que el menú sea un contenedor flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos del menú */
+}
+
+.menu-logo {
+    display: flex; /* Hace que el logo del menú sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+.menu-toggle {
+    display: flex; /* Hace que el botón de alternar menú sea un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de apilamiento de los elementos hijos */
+    justify-content: center; /* Centra el contenido verticalmente */
+    margin-left: 10px; /* Define un margen a la izquierda del botón de alternar menú */
+}
+
+.contenedor {
+    display: flex; /* Hace que el contenedor sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade relleno alrededor del contenedor */
+}
+
+.boton-imagen {
+    display: flex; /* Hace que el botón de imagen sea un contenedor flexible */
+    align-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.columna {
+    display: flex; /* Hace que la columna sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade relleno alrededor de la columna */
+}
+
+.cielo {
+    background: url('imagenes/escuchando_msuica.png'); /* Define la imagen de fondo */
+    background-position: bottom right; /* Alinea la imagen de fondo */
+    background-size: cover; /* Escala la imagen de fondo para cubrir el área */
+}
+
+.columna1 {
+    flex: 1; /* Establece la flexibilidad de la columna */
+    align-content: center; /* Centra el contenido verticalmente */
+    margin: 20px; /* Define el margen alrededor de la columna */
+}
+
+.columna2 {
+    flex: 0 1 30%; /* Define la flexibilidad y el ancho de la columna */
+    align-content: center; /* Centra el contenido verticalmente */
+}
+
+.imagen {
+    display: flex; /* Hace que la imagen sea un contenedor flexible */
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+}
+
+.imagen-responsiva {
+    max-width: 100%; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Permite que la altura de la imagen se ajuste automáticamente */
+    padding-left: 10px; /* Define un relleno a la izquierda de la imagen */
+}
+
+.nav-trabajo {
+    display: flex; /* Hace que la navegación sea un contenedor flexible */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos de navegación */
+    padding: 20px; /* Añade relleno alrededor de la navegación */
+}
+
+.texto-centrado {
+    display: flex; /* H
+
+ace que el texto centrado sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade relleno alrededor del texto centrado */
+    padding-left: 60px; /* Define un relleno a la izquierda del texto centrado */
+    padding-right: 60px; /* Define un relleno a la derecha del texto centrado */
+    font-size: 20px; /* Establece el tamaño de fuente del texto centrado */
+}
+
+.boton {
+    display: flex; /* Hace que el botón sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade relleno alrededor del botón */
+}
+
+.botonform2 {
+    color: #fff; /* Define el color del texto del botón */
+    background: rgba(87, 58, 165, 1); /* Define el color de fondo del botón */
+    font-weight: bold; /* Establece la negrita para el texto del botón */
+    padding: 25px; /* Añade relleno alrededor del botón */
+    text-align: center; /* Centra el texto horizontalmente */
+    border-radius: 50px; /* Define el radio de borde del botón */
+    width: 200px; /* Define el ancho del botón */
+    margin: 10px; /* Define el margen del botón */
+    font-size: 23px; /* Establece el tamaño de fuente del botón */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia de fuentes para el botón */
+    padding-left: 20px; /* Define un relleno a la izquierda del botón */
+}
+
+.botonform2 a {
+    color: #fff; /* Define el color del texto del botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+}
+
+@media (max-width: 768px) {
+    /* Estilos aplicados en pantallas de 768px o menos */
+    .titulo-trabajo {
+        font-size: 40px; /* Establece un tamaño de fuente más pequeño para el título en pantallas pequeñas */
+    }
+    .texto-centrado {
+        font-size: 15px; /* Establece un tamaño de fuente más pequeño para el texto centrado en pantallas pequeñas */
+        padding: 20px; /* Añade relleno alrededor del texto centrado */
+    }
+    .regresar {
+        padding-left: 10px; /* Define un relleno a la izquierda del elemento con clase "regresar" */
+        padding-top: 10px; /* Define un relleno arriba del elemento con clase "regresar" */
+    }
+    .botonform2 {
+        width: 150px; /* Define un ancho más pequeño para el botón en pantallas pequeñas */
+        font-size: 15px; /* Establece un tamaño de fuente más pequeño para el botón en pantallas pequeñas */
+    }
+    .columna2 {
+        flex: 0 1 5%; /* Define la flexibilidad y el ancho de la columna en pantallas pequeñas */
+    }
+}
+
+.pie {
+    text-align: center; /* Centra el texto horizontalmente en el pie de página */
+    align-items: center; /* Centra el contenido verticalmente en el pie de página */
+    color: rgb(0, 0, 0); /* Define el color del texto del pie de página */
+    margin-top: auto; /* Mueve el pie de página hacia abajo en la parte inferior de la ventana */
+}
+
+
+    
+ 
+/* estilos overlay */
+.button_container {
+  position: absolute;
+  /* top: 5%;
+  left: 4%; */
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #000000;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #000000;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #000000;
+}
+.button_container span {
+  background: #000000;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container.noabs{
+  position: fixed;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+.overlay {
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 27px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* declaración de media query: de 768px hacia abajo */
+  .overlay nav {
+      font-size: 20px;
+  }
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #000000;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

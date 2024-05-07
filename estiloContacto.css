@@ -1,0 +1,380 @@
+/* Estilos generales para resetear márgenes, rellenos y tamaño de caja */
+*,
+:after,
+:before {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Tamaño base de la fuente para el documento HTML */
+html {
+    font-size: 100%; /* 100% = 16px = 1rem */
+}
+
+/* Estilos para títulos */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/* Estilos para el título del trabajo */
+.titulo-trabajo{
+    display: flex;
+    color: #000000;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Estilos para párrafos y listas */
+p, ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Espaciado entre líneas */
+    line-height: 2.5;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem; /* 1rem * 16px = 16px */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* Estilos para encabezados */
+header {
+    display: block;
+    padding: 1.25rem; /* 1.25 * 16 = 20px */
+    border-bottom: 2px solid #b7b7b7;
+    color: #000000;
+}
+
+/* Estilos para pie de página */
+footer {
+    display: block;
+    padding: 1.25rem; /* 1.25 * 16 = 20px */
+    border-top: 2px solid #b7b7b7;
+    color: #000000;
+}
+
+/* Estilos para secciones principales */
+main, section, aside {
+    display: block;
+    margin: 0;
+    color: #000000;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Estilos específicos para pantallas de al menos 640px de ancho */
+@media screen and (min-width: 640px) {
+    .flex-container {
+        display: flex;
+    }
+}
+
+/* Estilos para el contenedor del menú */
+.menu-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para el logo del menú */
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Estilos para el icono de alternar menú */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* Estilos para contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+/* Estilos para contenedor de imágenes */
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Estilos para botones de imágenes */
+.boton-imagen {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+}
+
+/* Estilos para columnas */
+.columna {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos para primera columna */
+.columna1 {
+    flex: 1;
+    align-content: center;
+}
+
+/* Estilos para segunda columna */
+.columna2 {
+    flex: 0 1 20%; /* Columna del 30% del ancho de la pantalla */
+    align-content: center;
+}
+
+/* Estilos para imágenes */
+.imagen {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos para imágenes en la izquierda */
+.imagen-iz {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Dirección de los elementos */
+    justify-content: center; /* Alinea verticalmente */
+    align-items: center; /* Alinea horizontalmente */
+    height: 100%;
+}
+
+/* Estilos para imágenes en la derecha */
+.imagen-de {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; /* Dirección de los elementos */
+    justify-content: center; /* Alinea verticalmente */
+    align-items: center; /* Alinea horizontalmente */
+    height: 100%;
+}
+
+/* Estilos para navegación de trabajo */
+.nav-trabajo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para texto centrado */
+.texto-centrado {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+}
+
+/* Estilos específicos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    .titulo-trabajo {
+        font-size: 40px;
+    }
+    .texto-centrado {
+        font-size: 15px;
+        padding: 20px;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 600px;
+        padding: 20px;
+    }
+    .imagen-iz {
+        padding-left: 15%; /* 15% del ancho de la pantalla */
+    }
+    .imagen-de {
+        padding-left: 55%; /* 55% del ancho de la pantalla */
+    }
+}
+
+/* Estilos para pie de página */
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+}
+
+
+
+/* estilos overlay */
+.button_container {
+  position: absolute;
+  /* top: 5%;
+  left: 4%; */
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+
+
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #000000;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #000000;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #000000;
+}
+.button_container span {
+  background: #000000;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container.noabs{
+  position: fixed;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+.overlay {
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  right: 50%;
+  width: 50%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 27px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) { /* declaración de media query: de 768px hacia abajo */
+  .overlay nav {
+      font-size: 20px;
+  }
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #000000;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

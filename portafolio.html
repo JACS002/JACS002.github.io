@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="imagenes/isotipo@2x-8.png" type="image/x-icon">
+    <link rel="stylesheet" href="estiloPortafolio.css">
+    <!-- Librería animate.css -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> 
+    <!-- Librería wow -->
+    <script src="wow.min.js"></script> 
+    <script>
+        new WOW().init(); // Inicializar la librería wow
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu-container">
+            <!-- Botón de menú -->
+            <div class="menu-toggle">
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </div>
+            <!-- Logo del menú -->
+            <div class ="menu-logo">
+                <a href="index.html"><img src="imagenes/isotipo@2x-8.png"></a>
+            </div>
+            <!-- Menú desplegable -->
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="portafolio.html">PORTAFOLIO</a></li>
+                        <li><a href="sobre_mi.html">SOBRE MI</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+        </nav>
+    </header>
+    <main> 
+        <!-- Título del portafolio con animación -->
+        <h1 class="titulo-portafolio wow animate__animated animate__slideInRight">PORTAFOLIO</h1>
+        <!-- Cuadrícula de imágenes con animaciones -->
+        <div class='photo-grid-container'>
+            <div class='photo-grid'>
+              <div class='photo-grid-item first-item wow animate__animated animate__slideInUp'>
+                <div class="contendor-imagen">
+                <a href="portafolio1.html"><img src="imagenes/familia.jpg" title="Retrato de mi familia"></a>
+                </div>
+              </div>
+              <div class='photo-grid-item wow animate__animated animate__slideInUp'>
+                <div class="contendor-imagen">
+                <a href="portafolio2.html"><img src="imagenes/candy.jpg" title="Candy Low Poly"></a>
+                </div>
+              </div>
+              <div class='photo-grid-item wow animate__animated animate__slideInUp'>
+                <div class="contendor-imagen-ancho">
+                <a href="portafolio3.html"><img src="imagenes/bodegon.jpg" title="Bodegón"></a>
+                </div>
+              </div>
+              <div class='photo-grid-item wow animate__animated animate__slideInUp'>
+                <div class="contendor-imagen">
+                <a href="portafolio4.html"><img src="imagenes/kyoto.jpg" title="Portada Kyoto"></a>
+                </div>
+              </div>
+              <div class='photo-grid-item last-item wow animate__animated animate__slideInUp'>
+                <div class="contendor-imagen">
+                <a href="portafolio5.html"><img src="imagenes/menu_navideno.jpg" title="Menú navideño"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Botón de contacto -->
+        <div class="flex-container">
+            <a href="contacto.html">
+                <div class="botonform2">
+                    CONTACTO
+                </div>
+            </a>
+        </div>
+    </main>
+    
+    <footer class="pie">
+        <!-- Derechos de autor -->
+        <a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank"><p>All rights reserved  <img src="imagenes/copyright.png" height="20">  JACS 2024</p></a>
+    </footer>
+    <!-- Script personalizado -->
+    <script src="scriptv2.js"></script>
+    
+</body>
+</html> 
